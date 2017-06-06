@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <EditText
+        android:id="@+id/nombreReserva"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:ems="10"
+        android:hint="A nombre de quien"
+        android:inputType="textPersonName" />
+
+    <SeekBar
+        android:id="@+id/personasReserva"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/nombreReserva"
+        android:layout_marginTop="81dp"
+        android:max="30"
+        android:padding="30dp"
+        android:progress="1" />
+
+    <Button
+        android:id="@+id/editarReserva"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="Editar"
+        android:onClick="modificarReserva"
+        android:layout_marginLeft="70dp"
+        android:layout_marginStart="70dp"
+        android:layout_alignBaseline="@+id/eliminarReserva"
+        android:layout_alignBottom="@+id/eliminarReserva"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/eliminarReserva"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:onClick="eliminarReserva"
+        android:text="Eliminar"
+        android:layout_marginTop="29dp"
+        android:layout_below="@+id/personasReserva"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="65dp"
+        android:layout_marginEnd="65dp" />
+
+    <TextView
+        android:id="@+id/numPersonas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/personasReserva"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
